@@ -1,3 +1,12 @@
 spring:
   application:
     name: ai_ticket_classifier
+
+server:
+  port: 8080
+
+ai:
+  openai:
+    api-key: ${OPENAI_API_KEY}
+    base-url: https://api.openai.com/v1
+    model: gpt-4o-mini
